@@ -1,4 +1,3 @@
-# resume_builder
 # Resume Builder
 
 This is a simple Resume Builder web application created using HTML, CSS, and JavaScript. You can create, edit, delete, and preview your resumes with ease. The application also utilizes local storage to save your resume data, ensuring it's available even after you close the browser.
