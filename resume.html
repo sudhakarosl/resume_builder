@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="resume">
+      <div class="topComponent">
+        <div
+          class="image-uploader"
+          style="
+            width: 120px;
+            height: 120px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              cursor: pointer;
+              overflow: hidden;
+              background-color: #f2f2f2;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10;
+              "
+            >
+              <span
+                style="
+                  font-weight: 500;
+                  color: #37bc9b;
+                  text-align: center;
+                  font-size: 14px;
+                "
+              >
+                <img
+                  style="object-fit: contain"
+                  src="https://images.pexels.com/photos/977539/pexels-photo-977539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=210&dpr=1"
+                  alt="pic"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="topComponentDetails">
+          <span
+            style="outline-color: white; padding-left: 3"
+            id="candidateName"
+          >
+            Enter your name here...🖊️
+          </span>
+          <span style="outline-color: white; padding-left: 3" id="">
+            Graphic Designer & Web Developer
+          </span>
+          <div>
+            <button class="download" onclick="downloadResume()">
+              Download CV
+            </button>
+            <button>Hire Me</button>
+            <span>
+              <!-- {loading === true ? <HourglassAnimation /> : ""} -->
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="aboutMe">
+        <div class="aboutMeLeftBox">
+          <span style="padding: 3px" class="catTitle"> About Me </span>
+          <p style="outline-color: lightgray; padding: 3px" id="shortBio"></p>
+        </div>
+        <div class="aboutMeRightBox">
+          <table>
+            <tr>
+              <td>Age</td>
+              <td id="age">28</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td id="emailAddress">Joyce@company.com</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td id="phone">+0719-111-0011</td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td id="address">140, City Center, New York, U.S.A</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="skills">
+        <div>
+          <span class="catTitle">Professional Skills</span>
+        </div>
+        <div class="skillsWrap">
+          
+        </div>
+      </div>
+      <div class="workExp">
+        <div>
+          <span class="catTitle">Work Experience</span>
+        </div>
+        <div  class="workExpCont">
+         
+        </div>
+      </div>
+      <div class="workExp">
+        <div>
+          <span class="catTitle">Education</span>
+        </div>
+
+        <div class="edu">
+         
+        </div>
+      </div>
+    </div>
+    <script src="resume.js"></script>
+  </body>
+</html>

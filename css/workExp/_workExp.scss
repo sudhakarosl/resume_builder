@@ -1,0 +1,88 @@
+.workExp{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    border-bottom: 1px solid lightgray;
+
+    
+}
+ 
+.workExp>div:nth-child(1){
+   display: flex;
+align-items: center;
+gap:20px
+}
+
+.workExpAdd{
+     width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.workExpCard {
+    border-left: 2.2px solid lightgray;
+    padding: 15px 0;
+    position: relative;
+      transition: all 2s ease-in-out;
+  }
+  .workExpCardDetails {
+    margin-left: 25px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    border-left: 2.2px solid #4a88dc;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    /* box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.16); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 10px -10px;
+    padding: 30px;
+  
+    padding-right: 40px;
+  }
+  
+  .workExpCardDetails > div > p {
+    /* display: flex;   */
+    margin-top: 4px;
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .workExpCardDetails > p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #434a54;
+  }
+  .workExpCardDetails > div > div > span:nth-child(1) {
+    color: #434a54;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .workExpCardDetails > div > div > span:not(:nth-child(1)) {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .workExpCardCircle {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 2.2px solid #4a88dc;
+    border-radius: 50%;
+    position: relative;
+    top: 35px;
+    left: -7.5px;
+    z-index: 2;
+  }
+  .workExpCardLine {
+    width: 25px;
+    height: 0;
+    border-bottom: 2.2px solid #4a88dc;
+    position: relative;
+    top: 28px;
+  }
+  
+  .WorkExpRemove {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    cursor: pointer;
+  }
+  

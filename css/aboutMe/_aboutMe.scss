@@ -1,0 +1,39 @@
+.aboutMe{
+    display: flex;
+gap:40px;
+padding:50px 25px 30px 25px;
+    color: #434a54;
+    border-bottom: 1px solid lightgray;
+
+}
+.aboutMeLeftBox, .aboutMeRightBox{
+    flex: 1;
+}
+.catTitle{
+    font-size: 22px;
+    font-weight: bolder;
+    color: #434a54;
+}
+.aboutMeLeftBox>p{
+    font-weight:500;
+    font-size: 12px;
+}
+.aboutMeRightBox{
+      font-weight:500;
+    font-size: 12px;
+}
+.aboutMeRightBox  td:nth-child(2){
+    padding: 5px;
+    outline-color: lightgray;
+    
+}
+.aboutMeRightBox  td:nth-child(1){
+    padding-right: 25px;
+    color: black;
+    /* outline-color: lightgray; */
+    
+}
+.aboutMeRightBox tr td{
+ margin-right: 15px;
+ /* display: none; */
+}

@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  font-family: "Roboto", "sans-serif";
+  box-sizing: border-box;
+}
+.inputPage {
+  h2 {
+    margin: auto;
+    margin-top: 15px;
+    width: max-content;
+    text-align: center;
+  }
+  .inputNav {
+    display: flex;
+    margin: auto;
+    // overflow: hidden;
+    margin-top: 30px;
+    gap: 45px;
+    width: max-content;
+    position: relative;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      align-items: center;
+      font-weight: 600;
+    }
+    &_circle {
+      background-color: lightblue;
+
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    &_circle:hover {
+      scale: 1.1;
+    }
+    .inputNav_line {
+      position: absolute;
+      background-color: #5591df;
+      width: 90%;
+      left: 5px;
+      height: 15px;
+      top: calc(40px - 7.5px);
+      z-index: -1;
+    }
+  }
+  .form-container {
+    width: max-content;
+    margin: auto;
+    h2 {
+      text-decoration: underline;
+    }
+    // .hidden-form:not(:first-child) {
+      .hidden-form{
+      display: none;
+    }
+  }
+  /* CSS to change the color of the selected navigation circle */
+  .inputNav_circle.selected {
+    background-color: #5591df; /* Change this color to your desired color */
+    color: #ffffff; /* Change this color to your desired color */
+  }
+
+  .login {
+    height: 100vh;
+    padding: 20px 26px;
+    background-color: white;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top > img {
+    cursor: pointer;
+  }
+  .title {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .title > span {
+    color: #5591df;
+  }
+  .title > p {
+    color: black;
+  }
+  .form {
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: max-content;
+
+  }
+
+  .inputcontainer {
+    height: 64px;
+    position: relative;
+    width: 320px;
+  }
+
+  .ic1 {
+    color: black;
+  }
+
+  .input {
+    background-color: #f3ecec;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: none;
+    border-bottom: 3px solid #5591df;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+
+  .placeholder {
+    color: #2a47aa;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    font-weight: 500;
+    border: none;
+  }
+
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-12px) translateX(0px) scale(0.7);
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 60px #fafafa inset !important;
+  }
+
+  .submit {
+    height: 50px;
+    min-width: 80px;
+    border: none;
+    background-color: #5591df;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  .submit-button {
+    background-color: #0a5cc7;
+  }
+
+  .eduNav {
+    display: flex;
+    // max-width: 300px;
+    // overflow-x: scroll;
+    width: max-content;
+    gap: 15px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    &_line{
+      width: 95%;
+      position: absolute;
+      height: 3.5px;
+      background-color: #5591df;
+      z-index: -1;
+      top:14px;
+      left: 2px;
+    }
+    &_circle {
+      width: 30px;
+      cursor: pointer;
+      height: 30px;
+      background-color: lightblue;
+      font-weight: 600;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      transition: all .2s ease;
+    }
+    &_circle:hover{
+      scale: 1.1;
+      
+    }
+  }
+  .educationDelete{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+  }
+  .previewButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    position:absolute;
+    // bottom: 40px;
+    right:-100px;
+    z-index: 999;
+    // right: 0;
+  }
+  form{
+    position: relative;
+  }
+  @media (max-width: 700px) {
+    .form {
+      gap: 18px;
+    }
+
+    .submit {
+      height: 40px;
+    }
+  }
+}

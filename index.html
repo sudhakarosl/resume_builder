@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/inputPageCss/style.css" />
+  </head>
+  <body>
+    <div class="inputPage">
+      <h2>Resume maker</h2>
+
+      <div class="inputNav">
+        <div class="inputNav_line"></div>
+        <div>
+          <div class="inputNav_circle">1</div>
+          <span>Profile</span>
+        </div>
+
+        <div>
+          <div class="inputNav_circle">2</div>
+          <span>Education</span>
+        </div>
+
+        <div>
+          <div class="inputNav_circle">3</div>
+          <span>Work Experience</span>
+        </div>
+
+        <div>
+          <div class="inputNav_circle">4</div>
+          <span>Skills</span>
+        </div>
+      </div>
+
+      <div class="form-container">
+         
+        <form
+          id="form1"
+          class="hidden-form"
+          name="profile"
+          value="{1}"
+          onsubmit="handleSubmit()"
+
+        >
+         <button type="button" class="submit previewButton" onclick="handlePreview()">
+            Preview
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <h2>Profile Form</h2>
+
+          <div class="form">
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                name="candidateName"
+                class="input"
+                type="text"
+                placeholder=" "
+              />
+              <label class="placeholder">Candidate Name</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                class="input"
+                type="email"
+                name="emailAddress"
+                placeholder=" "
+              />
+              <label class="placeholder">Email Address</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                class="input"
+                type="tel"
+                name="phone"
+                pattern="^[0-9]*$"
+                placeholder=" "
+              />
+              <label class="placeholder">Phone</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                name="shortBio"
+                class="input"
+                placeholder=" "
+              />
+              <label class="placeholder">Short Bio</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                type="number"
+                name="age"
+                class="input"
+                placeholder=" "
+              />
+              <label class="placeholder">Age</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                name="address"
+                class="input"
+                placeholder=" "
+              />
+              <label class="placeholder">Address</label>
+            </div>
+            <div>
+              <button
+                type="submit"
+                id="form1submit"
+                value="save&add"
+                class="submit-button submit"
+              >
+                Save & Next
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <form
+          id="form2"
+          name="education"
+          class="hidden-form"
+          onsubmit="handleSubmit()"
+
+        >
+         <button type="button" class="submit previewButton" onclick="handlePreview()">
+            Preview
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <h2>Education Form</h2>
+          <div class="eduNav eduNavWrap"></div>
+          <div class="educationDelete" onclick="handleDelete('education')">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 -0.5 21 21"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#1f1daa"
+              stroke="#1f1daa"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>delete [#1487]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-179.000000, -360.000000)"
+                    fill="#000000"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M130.35,216 L132.45,216 L132.45,208 L130.35,208 L130.35,216 Z M134.55,216 L136.65,216 L136.65,208 L134.55,208 L134.55,216 Z M128.25,218 L138.75,218 L138.75,206 L128.25,206 L128.25,218 Z M130.35,204 L136.65,204 L136.65,202 L130.35,202 L130.35,204 Z M138.75,204 L138.75,200 L128.25,200 L128.25,204 L123,204 L123,206 L126.15,206 L126.15,220 L140.85,220 L140.85,206 L144,206 L144,204 L138.75,204 Z"
+                        id="delete-[#1487]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="form">
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                name="instituteName"
+                class="input"
+                type="text"
+                placeholder=" "
+              />
+              <label class="placeholder">University/School Name</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                name="degreeName"
+                value=""
+                class="input"
+                type="text"
+                placeholder=" "
+              />
+              <label class="placeholder">Degree name</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                name="startDate"
+                class="input"
+                type="date"
+                pattern="^[0-9]*$"
+                placeholder=" "
+              />
+              <label class="placeholder">Start Date</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                class="input"
+                type="date"
+                name="endDate"
+                pattern="^[0-9]*$"
+                placeholder=" "
+              />
+              <label class="placeholder">End Date</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                name="description"
+                class="input"
+                type="text"
+                placeholder=" "
+              />
+              <label class="placeholder">Description</label>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="next-button submit"
+                value="save&next"
+              >
+                Save & Next
+              </button>
+              <button
+                type="submit"
+                id="form2submit"
+                value="save&add"
+                class="submit-button submit"
+              >
+                Save & Add More
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <form
+          id="form3"
+          class="hidden-form"
+          name="workExp"
+          onsubmit="handleSubmit()"
+
+        >
+         <button type="button" class="submit previewButton" onclick="handlePreview()">
+            Preview
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <h2>Work Experience Form</h2>
+          <div class="eduNav workExp"></div>
+          <div class="educationDelete" onclick="handleDelete('workExp')">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 -0.5 21 21"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="#1f1daa"
+              stroke="#1f1daa"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>delete [#1487]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-179.000000, -360.000000)"
+                    fill="#000000"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M130.35,216 L132.45,216 L132.45,208 L130.35,208 L130.35,216 Z M134.55,216 L136.65,216 L136.65,208 L134.55,208 L134.55,216 Z M128.25,218 L138.75,218 L138.75,206 L128.25,206 L128.25,218 Z M130.35,204 L136.65,204 L136.65,202 L130.35,202 L130.35,204 Z M138.75,204 L138.75,200 L128.25,200 L128.25,204 L123,204 L123,206 L126.15,206 L126.15,220 L140.85,220 L140.85,206 L144,206 L144,204 L138.75,204 Z"
+                        id="delete-[#1487]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="form">
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                class="input"
+                name="companyName"
+                type="text"
+                placeholder=" "
+              />
+              <label class="placeholder">Company Name</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                class="input"
+                type="text"
+                name="position"
+                placeholder=" "
+              />
+              <label class="placeholder">Position</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                class="input"
+                type="date"
+                name="workStartDate"
+                placeholder=" "
+              />
+              <label class="placeholder">Start Date</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                class="input"
+                type="date"
+                name="'workEndDate"
+                placeholder=" "
+              />
+              <label class="placeholder">End Date</label>
+            </div>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                class="input"
+                placeholder=" "
+                name="workDesc"
+              />
+              <label class="placeholder">Description</label>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="next-button submit"
+                value="save&next"
+              >
+                Save & Next
+              </button>
+              <button
+                type="submit"
+                id="form3submit"
+                value="save&add"
+                class="submit-button submit"
+              >
+                Save & Add More
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <form
+          id="form4"
+          class="hidden-form"
+          name="skills"
+          onsubmit="handleSubmit()"
+
+        >
+         <button type="button" class="submit previewButton" onclick="handlePreview()">
+            Preview
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <h2>Skills Form</h2>
+          <div class="form">
+            <ul id="skillList"></ul>
+            <div class="inputcontainer ic1">
+              <input
+                required
+                autocomplete="off"
+                value=""
+                name="skill"
+                id="skillInput"
+                class="input"
+                type="text"
+                placeholder=" "
+              />
+              <label class="placeholder">Add Skill</label>
+            </div>
+
+            <div>
+              <span>Add comma seperated skills!</span>
+
+              <button
+                type="submit"
+                id="form4submit"
+                value="save&add"
+                class="submit-button submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

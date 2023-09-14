@@ -1,0 +1,217 @@
+.skills {
+    padding: 25px;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+  }
+  .skillsWrap {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .skillsAdd{
+     
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .skills>div:nth-child(1){
+  display: flex;
+  align-items: center;
+  gap:20px
+  }
+   
+
+.skillSlider span {
+    /* margin-bottom: 1rem; */
+    color:#434a54;
+    font-size: 14px; 
+    font-weight: 500;
+  padding-left: 3px;
+  padding-right: 3px;
+  
+  
+  }
+  .skillSlider{
+    position: relative;
+  }
+  .skillSliderRemove{
+  position: absolute;
+  right: -20px;
+  top:-5px;
+  cursor: pointer;
+  }
+  
+  .sliderContainer {
+    width: 300px;
+    height: 12px;
+    background-color: #4a8adc;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .nslider {
+    position: absolute;
+    top: -2.5px;
+    width: 17x;
+
+    height: 17px;
+    /* border-radius: 50%; */
+    background-color: #4a8adc;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .sliderContainer:hover .nslider {
+    opacity: 1;
+  }
+  
+  .sliderContainer:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #d4d4d4;
+  }
+  
+  
+   
+  
+  
+  
+   .slider { 
+      margin: auto;
+      -webkit-appearance: none;
+      position: relative;
+      overflow: hidden;
+      height: 12px;
+      width: 300px;
+      /* width: 200px; */
+      cursor: pointer;
+      border-radius: 0; /* iOS */
+  }
+   .slider2 { 
+      margin: auto;
+      -webkit-appearance: none;
+      position: relative;
+      overflow: hidden;
+      height: 12px;
+      width: 300px;
+      /* width: 200px; */
+      cursor: pointer;
+      border-radius: 0; /* iOS */
+  }
+  
+  .slider::-webkit-slider-runnable-track {
+      background: #ddd;
+  }
+  .slider2::-webkit-slider-runnable-track {
+      background: #ddd;
+  }
+  
+  /*
+   * 1. Set to 0 width and remove border for a slider without a thumb
+   * 2. Shadow is negative the full width of the input and has a spread 
+   *    of the width of the input.
+   */
+  .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0px; 
+      height: 12px;
+      background: #fff;
+      box-shadow: -200px 0 0 200px #4a8adc; 
+  }
+  .slider2::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 0px; 
+      height: 12px;
+      background: #fff;
+      box-shadow: -200px 0 0 200px #37bc9b; 
+  }
+  
+  .slider::-moz-range-track {
+      height: 12px;
+      background: #ddd;
+  }
+  .slider2::-moz-range-track {
+      height: 12px;
+      background: #ddd;
+  }
+  
+  .slider::-moz-range-thumb {
+      background: #fff;
+      height: 12px;
+      width: 20px;
+      border: 3px solid #999;
+      border-radius: 0 !important;
+      box-shadow: -200px 0 0 200px #4a8adc;
+      box-sizing: border-box;
+  }
+  .slider2::-moz-range-thumb {
+      background: #fff;
+      height: 12px;
+      width: 20px;
+      border: 3px solid #999;
+      border-radius: 0 !important;
+      box-shadow: -200px 0 0 200px #37bc9b;
+      box-sizing: border-box;
+  }
+  
+  .slider::-ms-fill-lower { 
+      background:#4a8adc;
+  }
+  .slider2::-ms-fill-lower { 
+      background:#4a8adc;
+  }
+  
+  .slider::-ms-thumb { 
+      background: #fff;
+      border: 2px solid #999;
+      height: 12px;
+      width: 20px;
+      box-sizing: border-box;
+  }
+  .slider2::-ms-thumb { 
+      background: #fff;
+      border: 2px solid #999;
+      height: 12px;
+      width: 20px;
+      box-sizing: border-box;
+  }
+  
+  .slider::-ms-ticks-after { 
+      display: none; 
+  }
+  .slider2::-ms-ticks-after { 
+      display: none; 
+  }
+  
+  .slider::-ms-ticks-before { 
+      display: none; 
+  }
+  .slider2::-ms-ticks-before { 
+      display: none; 
+  }
+  
+  .slider::-ms-track { 
+      background: #ddd;
+      color: transparent;
+      height: 12px;
+      border: none;
+  }
+  .slider2::-ms-track { 
+      background: #ddd;
+      color: transparent;
+      height: 12px;
+      border: none;
+  }
+  
+  .slider::-ms-tooltip { 
+      display: none;
+  }
+  .slider2::-ms-tooltip { 
+      display: none;
+  }

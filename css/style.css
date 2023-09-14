@@ -1,0 +1,441 @@
+.topComponent {
+  background-color: #4a88dc;
+  background-image: linear-gradient(to right, #5591df 1px, transparent 1px), linear-gradient(to bottom, #5591df 1px, transparent 1px);
+  background-size: 9px 9px;
+  background-position: 0 0, 0 0;
+  padding-left: 20px;
+  padding-top: 25px;
+  display: flex;
+  gap: 80px;
+  /* width: 800px; */
+  height: 140px;
+}
+
+.image-uploader {
+  background-color: white;
+  padding: 8px;
+  position: relative;
+  top: 15px;
+  transition: all 0.5s ease;
+}
+
+.image-uploader:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.topComponentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.topComponentDetails > span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.topComponentDetails > span:nth-child(2) {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.topComponentDetails > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.topComponentDetails > div > button {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.topComponentDetails > div > button:nth-child(1) {
+  background-color: #e6e9ed;
+}
+
+.topComponentDetails > div > button:nth-child(2) {
+  background-color: #37bc9b;
+  color: white;
+}
+
+.aboutMe {
+  display: flex;
+  gap: 40px;
+  padding: 50px 25px 30px 25px;
+  color: #434a54;
+  border-bottom: 1px solid lightgray;
+}
+
+.aboutMeLeftBox, .aboutMeRightBox {
+  flex: 1;
+}
+
+.catTitle {
+  font-size: 22px;
+  font-weight: bolder;
+  color: #434a54;
+}
+
+.aboutMeLeftBox > p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.aboutMeRightBox {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.aboutMeRightBox td:nth-child(2) {
+  padding: 5px;
+  outline-color: lightgray;
+}
+
+.aboutMeRightBox td:nth-child(1) {
+  padding-right: 25px;
+  color: black;
+  /* outline-color: lightgray; */
+}
+
+.aboutMeRightBox tr td {
+  margin-right: 15px;
+  /* display: none; */
+}
+
+.skills {
+  padding: 25px;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+.skillsWrap {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.skillsAdd {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.skills > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.skillSlider span {
+  /* margin-bottom: 1rem; */
+  color: #434a54;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.skillSlider {
+  position: relative;
+}
+
+.skillSliderRemove {
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  cursor: pointer;
+}
+
+.sliderContainer {
+  width: 300px;
+  height: 12px;
+  background-color: #4a8adc;
+  position: relative;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.nslider {
+  position: absolute;
+  top: -2.5px;
+  width: 17x;
+  height: 17px;
+  /* border-radius: 50%; */
+  background-color: #4a8adc;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sliderContainer:hover .nslider {
+  opacity: 1;
+}
+
+.sliderContainer:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #d4d4d4;
+}
+
+.slider {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 12px;
+  width: 300px;
+  /* width: 200px; */
+  cursor: pointer;
+  border-radius: 0; /* iOS */
+}
+
+.slider2 {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 12px;
+  width: 300px;
+  /* width: 200px; */
+  cursor: pointer;
+  border-radius: 0; /* iOS */
+}
+
+.slider::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+.slider2::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ * 2. Shadow is negative the full width of the input and has a spread 
+ *    of the width of the input.
+ */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0px;
+  height: 12px;
+  background: #fff;
+  box-shadow: -200px 0 0 200px #4a8adc;
+}
+
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0px;
+  height: 12px;
+  background: #fff;
+  box-shadow: -200px 0 0 200px #37bc9b;
+}
+
+.slider::-moz-range-track {
+  height: 12px;
+  background: #ddd;
+}
+
+.slider2::-moz-range-track {
+  height: 12px;
+  background: #ddd;
+}
+
+.slider::-moz-range-thumb {
+  background: #fff;
+  height: 12px;
+  width: 20px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -200px 0 0 200px #4a8adc;
+  box-sizing: border-box;
+}
+
+.slider2::-moz-range-thumb {
+  background: #fff;
+  height: 12px;
+  width: 20px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -200px 0 0 200px #37bc9b;
+  box-sizing: border-box;
+}
+
+.slider::-ms-fill-lower {
+  background: #4a8adc;
+}
+
+.slider2::-ms-fill-lower {
+  background: #4a8adc;
+}
+
+.slider::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 12px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+.slider2::-ms-thumb {
+  background: #fff;
+  border: 2px solid #999;
+  height: 12px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+.slider::-ms-ticks-after {
+  display: none;
+}
+
+.slider2::-ms-ticks-after {
+  display: none;
+}
+
+.slider::-ms-ticks-before {
+  display: none;
+}
+
+.slider2::-ms-ticks-before {
+  display: none;
+}
+
+.slider::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 12px;
+  border: none;
+}
+
+.slider2::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 12px;
+  border: none;
+}
+
+.slider::-ms-tooltip {
+  display: none;
+}
+
+.slider2::-ms-tooltip {
+  display: none;
+}
+
+.workExp {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.workExp > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.workExpAdd {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.workExpCard {
+  border-left: 2.2px solid lightgray;
+  padding: 15px 0;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.workExpCardDetails {
+  margin-left: 25px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  border-left: 2.2px solid #4a88dc;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  /* box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.16); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 9px 10px -10px;
+  padding: 30px;
+  padding-right: 40px;
+}
+
+.workExpCardDetails > div > p {
+  /* display: flex;   */
+  margin-top: 4px;
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.workExpCardDetails > p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #434a54;
+}
+
+.workExpCardDetails > div > div > span:nth-child(1) {
+  color: #434a54;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.workExpCardDetails > div > div > span:not(:nth-child(1)) {
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.workExpCardCircle {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border: 2.2px solid #4a88dc;
+  border-radius: 50%;
+  position: relative;
+  top: 35px;
+  left: -7.5px;
+  z-index: 2;
+}
+
+.workExpCardLine {
+  width: 25px;
+  height: 0;
+  border-bottom: 2.2px solid #4a88dc;
+  position: relative;
+  top: 28px;
+}
+
+.WorkExpRemove {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+.resume {
+  max-width: 800px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
